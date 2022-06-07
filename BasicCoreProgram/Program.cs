@@ -9,7 +9,8 @@ namespace BasicCoreProgram
             bool end = true;
             Console.WriteLine("1. Flip Coin Percentage Problem\n2. Checking Leap Year Program\n3." +
                 " Table Of Power Of Two\n4. Harmonic Series\n5. Prime Factors\n6. " +
-                "Computing Quotient And Remainder\n7. Swapping Numbers\n8. End The Program");
+                "Computing Quotient And Remainder\n7. Swapping Numbers\n8. Checking For Even Or Odd\n9. " +
+                "End The Program");
             while (end)
             {
                 Console.WriteLine("Choose an option to execute...");
@@ -45,6 +46,11 @@ namespace BasicCoreProgram
                         swapping.Swap();
                         break;
                     case 8:
+                        CheckingEvenOdd evenodd = new CheckingEvenOdd();
+                        evenodd.EvenOdd();
+                        break;
+                        break;
+                    case 9:
                         end = false;
                         break;
                     default:
