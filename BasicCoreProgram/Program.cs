@@ -7,7 +7,8 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to the Basice Core Programs....");
             bool end = true;
-            Console.WriteLine("1. Flip Coin Percentage Problem\n2. Checking Leap Year Program\n3. End The Program");
+            Console.WriteLine("1. Flip Coin Percentage Problem\n2. Checking Leap Year Program\n3." +
+                " Table Of Power Of Two\n4. End The Program");
             while (end)
             {
                 Console.WriteLine("Choose an option to execute...");
@@ -23,6 +24,10 @@ namespace BasicCoreProgram
                         checking.CheckingLeapYear();
                         break;
                     case 3:
+                        PowerOfTwo table = new PowerOfTwo();
+                        table.PowerOf2();
+                        break;
+                    case 4:
                         end = false;
                         break;
                     default:
