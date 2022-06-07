@@ -8,7 +8,8 @@ namespace BasicCoreProgram
             Console.WriteLine("Welcome to the Basice Core Programs....");
             bool end = true;
             Console.WriteLine("1. Flip Coin Percentage Problem\n2. Checking Leap Year Program\n3." +
-                " Table Of Power Of Two\n4. Harmonic Series\n5. Prime Factors\n6. End The Program");
+                " Table Of Power Of Two\n4. Harmonic Series\n5. Prime Factors\n6." +
+                "Computing Quotient And Remainder\n7. End The Program");
             while (end)
             {
                 Console.WriteLine("Choose an option to execute...");
@@ -36,6 +37,10 @@ namespace BasicCoreProgram
                         factors.Prime();
                         break;
                     case 6:
+                        QuotientAndRemainder computing = new QuotientAndRemainder();
+                        computing.ComputingQuotientRemainder();
+                        break;
+                    case 7:
                         end = false;
                         break;
                     default:
