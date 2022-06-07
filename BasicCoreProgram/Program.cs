@@ -8,7 +8,7 @@ namespace BasicCoreProgram
             Console.WriteLine("Welcome to the Basice Core Programs....");
             bool end = true;
             Console.WriteLine("1. Flip Coin Percentage Problem\n2. Checking Leap Year Program\n3." +
-                " Table Of Power Of Two\n4. End The Program");
+                " Table Of Power Of Two\n4. Harmonic Series\n5. End The Program");
             while (end)
             {
                 Console.WriteLine("Choose an option to execute...");
@@ -28,6 +28,10 @@ namespace BasicCoreProgram
                         table.PowerOf2();
                         break;
                     case 4:
+                        HarmonicNumberValue series = new HarmonicNumberValue();
+                        series.HarmonicNumber();
+                        break;
+                    case 5:
                         end = false;
                         break;
                     default:
