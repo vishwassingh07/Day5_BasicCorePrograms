@@ -7,7 +7,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to the Basice Core Programs....");
             bool end = true;
-            Console.WriteLine("1. Flip Coin Percentage Problem\n2. End The Program");
+            Console.WriteLine("1. Flip Coin Percentage Problem\n2. Checking Leap Year Program\n3. End The Program");
             while (end)
             {
                 Console.WriteLine("Choose an option to execute...");
@@ -19,6 +19,10 @@ namespace BasicCoreProgram
                         flip.FlipPercent();
                         break;
                     case 2:
+                        LeapYear checking = new LeapYear();
+                        checking.CheckingLeapYear();
+                        break;
+                    case 3:
                         end = false;
                         break;
                     default:
