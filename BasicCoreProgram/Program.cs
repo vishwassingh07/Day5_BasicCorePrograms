@@ -10,7 +10,7 @@ namespace BasicCoreProgram
             Console.WriteLine("1. Flip Coin Percentage Problem\n2. Checking Leap Year Program\n3." +
                 " Table Of Power Of Two\n4. Harmonic Series\n5. Prime Factors\n6. " +
                 "Computing Quotient And Remainder\n7. Swapping Numbers\n8. Checking For Even Or Odd\n9. " +
-                "End The Program");
+                "Checking For Vowel And Consonant\n10.End The Program");
             while (end)
             {
                 Console.WriteLine("Choose an option to execute...");
@@ -51,6 +51,10 @@ namespace BasicCoreProgram
                         break;
                         break;
                     case 9:
+                        CheckingVowelConsonant vowelconsonant = new CheckingVowelConsonant();
+                        vowelconsonant.alphabetcheck();
+                        break;
+                    case 10:
                         end = false;
                         break;
                     default:
